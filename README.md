@@ -13,7 +13,7 @@ docker run -p <port>:8888 spam-api
 
 http request (test locally)
 ```
-curl -X POST -H "Content-Type: application/json" -d '{"message": "hello"}' http://localhost:<port>/predict
+curl -X POST -H "Content-Type: application/json" -d '{"message": "<email-content>"}' http://localhost:<port>/predict
 ```
 
 after deployed in EKS, use the specific endpoint url to replace the url
