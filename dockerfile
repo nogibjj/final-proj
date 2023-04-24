@@ -8,7 +8,7 @@ RUN python -m pip install --upgrade pip
 
 # RUN apt-get update && apt-get install -y apt-utils && apt-get upgrade -y && apt-get install -y python3-pip
 
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt  --no-cache-dir
 
 COPY spam.csv .
 
@@ -16,8 +16,8 @@ COPY my_util.py .
 
 COPY app.py .
 
-EXPOSE 8888
+EXPOSE 80
 
-ENTRYPOINT [ "python3" ]
+# ENTRYPOINT [ "python3" ]
 
-CMD ["app.py" ]
+CMD ["gunicorn"  , "-b", "0.0.0.0:80", "app:app"]

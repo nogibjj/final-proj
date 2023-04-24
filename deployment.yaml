@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server-demo
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: spam-api-back-end
+          image: 347692084607.dkr.ecr.us-east-1.amazonaws.com/spam-api:latest
+          ports:
+            - containerPort: 80
