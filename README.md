@@ -19,3 +19,10 @@ curl -X POST -H "Content-Type: application/json" -d '{"message": "<email-content
 Deployed on eks cluster with one replica
 
 Access url: http://44.203.218.121:31479/predict
+
+
+## Loadtest
+
+<img src="loadtest_result.png" width="100%">
+
+<img src="loadtest_chart.png" width="100%">
