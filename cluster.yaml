@@ -1,7 +1,7 @@
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 metadata:
-  name: EKS-Demo-Cluster
+  name: EKS-Demo-Cluster2
   region: us-east-1
 
 vpc:
@@ -22,4 +22,4 @@ vpc:
 nodeGroups:
   - name: EKS-public-workers
     instanceType: t2.medium
-    desiredCapacity: 1
+    desiredCapacity: 2

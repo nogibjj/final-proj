@@ -16,9 +16,11 @@ http request (test locally)
 curl -X POST -H "Content-Type: application/json" -d '{"message": "<email-content>"}' http://localhost:80/predict
 ```
 
-Deployed on eks cluster with one replica
+Deployed on eks cluster with two replicas
 
-Access url: http://44.203.218.121:31479/predict
+Access urls:
+- http://44.201.253.122:31479/predict
+- http://3.237.60.191:31479/predict
 
 
 ## Loadtest
