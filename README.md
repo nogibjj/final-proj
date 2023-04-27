@@ -23,6 +23,12 @@ Access url: http://44.203.218.121:31479/predict
 
 ## Loadtest
 
+To run the loadtest:
+
+```
+locust -f locustfile.py
+```
+
 <img src="loadtest_result.png" width="100%">
 
 <img src="loadtest_chart.png" width="100%">
