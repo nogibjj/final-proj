@@ -1,9 +1,9 @@
-from locust import HttpUser, between, task
+from locust import HttpUser, between, task, FastHttpUser
 import csv
 import random
 
 # Define a user class to simulate requests
-class MyUser(HttpUser):
+class MyUser(FastHttpUser):
     # Set the wait time between requests
     wait_time = between(5, 15)
 

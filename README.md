@@ -27,7 +27,11 @@ Access urls:
 
 ## Loadtest
 
-To run the loadtest:
+To run the loadtest, we need to first install:
+```
+pip install locust
+```
+then run command:
 
 ```
 locust -f locustfile.py
