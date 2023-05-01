@@ -1,4 +1,4 @@
-Final Project: Spam Detector
+# Final Project: Spam Detector
 
 dataset: https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
 
