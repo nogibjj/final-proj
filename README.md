@@ -43,3 +43,6 @@ locust -f locustfile.py
 <img src="loadtest_result.png" width="100%">
 
 <img src="loadtest_chart.png" width="100%">
+
+# Demo
+https://www.youtube.com/watch?v=QWWCZwJvywc
