@@ -1,5 +1,7 @@
 dataset: https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
 
+training a spam classification model using a bag-of-words approach with Naive Bayes.
+
 build image
 ```
 docker build -t spam-api .
