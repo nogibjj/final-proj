@@ -28,6 +28,7 @@ Access urls:
 
 
 ## Loadtest
+We find a spam message dataset to loadtest our training model(see ham_spam_test.csv). Our load test program fetch a ramdom message in the dateset and send a POST request to the API endpoint with the selected message.
 
 To run the loadtest, we need to first install:
 ```
